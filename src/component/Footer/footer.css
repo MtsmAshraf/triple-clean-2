@@ -34,6 +34,7 @@ footer .bg{
   footer .bg.bottom-right{
     bottom: 0px;
     right: 0;
+    
   }
   @media (max-width: 767px) {
       footer .bg{

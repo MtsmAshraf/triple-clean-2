@@ -194,7 +194,7 @@
     min-height: 100px;
     overflow-x: scroll;
     margin-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -211,12 +211,14 @@
 }
 .main-form .perfumes-wrapper .perfume{
     position: relative;
-   
     gap: 10px;
     width: 400px;
-    height: 235px;
+    height: 210px;
+    transition: var(--main-transition);
+    border-radius: 40px 40px 0px 0px;
+    border: 1px solid transparent;
 }
-.main-form .perfumes-wrapper .perfume:first-of-type label{
+.main-form .perfumes-wrapper .perfume{
 }
 .main-form .perfumes-wrapper .perfume label{
     /* height: 100%; */
@@ -229,11 +231,17 @@
     border: 1px solid transparent;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 6px;
     background-color: var(--bg-color);
     border-radius: 40px;
+    transition: var(--main-transition);
     /* padding-top: 20px;
     padding-bottom: 20px; */
+}
+.main-form .perfumes-wrapper .perfume:has(input:checked),
+.main-form .perfumes-wrapper .perfume:hover{
+    background-color: var(--icon-bg);
+    border: 1px solid var(--main-color);
+    transition: var(--main-transition);
 }
 .main-form .perfumes-wrapper .perfume .img{
     height: fit-content;
@@ -244,7 +252,6 @@
     flex: 1;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: red;
 }
 .main-form .perfumes-wrapper .perfume img{
     /* width: 100px;
@@ -258,18 +265,23 @@
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 6px;
+    border-radius: 0px 0px 6px 6px;
     /* display: none; */
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 100%;    
+    border: 1px solid transparent;
 }
-.main-form .perfumes-wrapper .perfume:has(input:checked) label{
-    border: 1px solid var(--main-color);
+
+.main-form .perfumes-wrapper .perfume:has(input:checked) label,
+.main-form .perfumes-wrapper .perfume:hover label{
+    /* border: 1px solid var(--main-color); */
 }
-.main-form .perfumes-wrapper .perfume:has(input:checked) span{
+.main-form .perfumes-wrapper .perfume:has(input:checked) span,
+.main-form .perfumes-wrapper .perfume:hover span{
     background-color: var(--main-color);
     color: white;
+    border: 1px solid var(--main-color);
 }
 .main-form .form-bg-img{
     position: absolute;
