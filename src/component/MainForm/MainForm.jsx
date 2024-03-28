@@ -9,6 +9,7 @@ import bgLogo from "../../assests/small-logo.png"
 import bigCarSvg from "../../assests/big-car.svg"
 import smallCarSvg from "../../assests/small-car.svg"
 import motorcycleSvg from "../../assests/motorcycle.svg"
+import testImg from "../../assests/dior-sauvage-modified.png"
 const MainForm = () => {
     const language = useSelector(state => state.language.language);
     useEffect(() => {
@@ -148,12 +149,13 @@ const MainForm = () => {
             <div className="perfumes-wrapper">
                 {
                 perfumeData.map((perfume) => {
+                    let imgUrl = perfume.imgUrl
                     return(
                         <div className="perfume" key={perfume.id}>
                             <input type="radio" required id={perfume.name} name="perfume_type" value={perfume.name} />
                             <label htmlFor={perfume.name}>
                                 <div className="img">
-                                    <img src={perfume.imgUrl} alt="" />
+                                    <img src={testImg} alt="" />
                                 </div>
                                 <span>
                                     {perfume.name}

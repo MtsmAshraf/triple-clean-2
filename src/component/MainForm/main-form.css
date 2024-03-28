@@ -220,7 +220,7 @@
 }
 .main-form .perfumes-wrapper .perfume label{
     height: 100%;
-    width: 150px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,6 +230,7 @@
     cursor: pointer;
     border-radius: 6px;
     background-color: var(--bg-color);
+    padding: 20px;
 }
 .main-form .perfumes-wrapper .perfume .img{
     height: 150px;
@@ -238,10 +239,13 @@
     justify-content: center;
     overflow: hidden;
     flex: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .main-form .perfumes-wrapper .perfume img{
     /* width: 100px;
     height: 100px; */
+    height: 100%;
 }   
 .main-form .perfumes-wrapper .perfume span{
     color: var(--text-color);
@@ -250,6 +254,7 @@
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-radius: 6px;
 }
 .main-form .perfumes-wrapper .perfume:has(input:checked) label{
     border: 1px solid var(--main-color);

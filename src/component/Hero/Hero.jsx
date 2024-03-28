@@ -4,10 +4,10 @@ import grandHayah from "../../assests/grand-logo.jpeg"
 import { BookBtn } from "../BookBtn/BookBtn"
 import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
-import topLeftBg from "../../assests/bg-top-left.png"
-import bottomRightBg from "../../assests/bottom-right-bg.png"
-// import topLeftBg from "../../assests/logo-bg-top-left.png"
-// import bottomRightBg from "../../assests/logo-bottom-right-bg.png"
+// import topLeftBg from "../../assests/bg-top-left.png"
+// import bottomRightBg from "../../assests/bottom-right-bg.png"
+import topLeftBg from "../../assests/logo-bg-top-left.png"
+import bottomRightBg from "../../assests/logo-bottom-right-bg.png"
 
 export const Hero = () => {
     const language = useSelector(state => state.language.language)

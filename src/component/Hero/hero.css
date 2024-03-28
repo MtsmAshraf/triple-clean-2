@@ -9,7 +9,7 @@
 }
 .hero .bg{
     position: absolute;
-    width: 400px;
+    /* width: 400px; */
     width: 300px;
     z-index: -1;
     transition: var(--main-trasnition);
@@ -99,7 +99,7 @@
         margin-bottom: 30px;
     }
     .hero .bg{
-        width: 300px;
+        /* width: 300px; */
         width: 200px;
     }
     .hero p{
