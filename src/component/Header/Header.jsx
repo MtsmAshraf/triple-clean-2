@@ -35,7 +35,7 @@ const Header = () => {
         // root.style.setProperty("--selected-option-text", "white")
         root.style.setProperty("--main-form-bg", "#121219")
         root.style.setProperty("--logo-opacity", "0.1");
-        root.style.setProperty("--overlay-bg", "rgb(0,0,0,0.2)");
+        root.style.setProperty("--overlay-bg", "rgb(0,0,0,0.5)");
         root.style.setProperty("--main-gradient", "linear-gradient(to right top, #000000, #281620, #412644, #4e3d72, #3d5aa6)");
         root.style.setProperty("--bg-img", "url(../../assests/bg-img.png)");
     }else if(!isDarkMode){

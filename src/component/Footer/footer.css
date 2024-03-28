@@ -1,5 +1,6 @@
 footer{
     text-align: center;
+    position: relative;
 }
 footer ul{
     display: flex;
@@ -13,3 +14,30 @@ footer .logo{
     margin-right: auto;
     margin-left: auto;
 }
+
+footer .bg{
+    position: absolute;
+    /* width: 400px; */
+    width: 300px;
+    z-index: -1;
+    transition: var(--main-trasnition);
+    opacity: 0;
+    opacity: 1;
+  }
+  footer.loaded .bg{
+    opacity: 1;
+  }
+  footer .bg.top-left{
+    top: 0;
+    left: 0;
+  }
+  footer .bg.bottom-right{
+    bottom: 0px;
+    right: 0;
+  }
+  @media (max-width: 767px) {
+      footer .bg{
+          /* width: 300px; */
+          width: 200px;
+      }
+  }

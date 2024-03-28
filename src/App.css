@@ -32,14 +32,13 @@
 }
 body{
   background-color: var(--bg-color);
-  /* background-image: url(./assests/pexels-pixabay-259915.jpg); */
   color: var(--text-color);
   /* height: 100vh; */
   overflow-y: scroll;
   /* padding-top: 100px; */
   font-family: "Tajawal", sans-serif;
   transition: var(--main-transition);
-  /* background-image: url(./assests/blob-scatter-haikei.svg); */
+  /* background-image: url("./assests//logo-bg-noBg.png"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -104,4 +103,31 @@ input[type=number] {
   /* background-color: red; */
   /* z-index: -1; */
   transition: none !important;
+}
+
+.App .bg{
+  position: absolute;
+  /* width: 400px; */
+  width: 300px;
+  z-index: -1;
+  transition: var(--main-trasnition);
+  opacity: 0;
+  opacity: 1;
+}
+.App.loaded .bg{
+  opacity: 1;
+}
+.App .bg.top-left{
+  top: 0;
+  left: 0;
+}
+.App .bg.bottom-right{
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 767px) {
+    .App .bg{
+        /* width: 300px; */
+        width: 200px;
+    }
 }

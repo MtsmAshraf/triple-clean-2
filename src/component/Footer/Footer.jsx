@@ -5,11 +5,15 @@ import SocialIcon from "../SocialIcon/SocialIcon"
 import { faInstagram, faWhatsapp, faXTwitter } from "@fortawesome/free-brands-svg-icons"
 import tripleCleanLogo from "../../assests/tri-logo-removebg-hd.png"
 import { useSelector } from "react-redux"
+import bottomRightBg from "../../assests/logo-bottom-right-bg.png"
 
 const Footer = () => {
     const language = useSelector(state => state.language.language)
   return (
     <footer>
+        <div className="bg bottom-right">
+            <img src={bottomRightBg} alt="bottom right bg" />
+        </div>
         <div className="container">
             <div className="logo tripple">
                 <img src={tripleCleanLogo} alt="Triple Clean Logo" />

@@ -19,12 +19,12 @@ export const Hero = () => {
     })
   return (
     <div className={`hero` + (isLoaded ? ` loaded` : ``)}>
-        <div className="bg top-left">
+        {/* <div className="bg top-left">
             <img src={topLeftBg} alt="top left bg" />
         </div>
         <div className="bg bottom-right">
             <img src={bottomRightBg} alt="bottom right bg" />
-        </div>
+        </div> */}
         <div className="container">
             <div className="hero-logos">
                 <div className="logo">
