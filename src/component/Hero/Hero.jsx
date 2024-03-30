@@ -8,7 +8,7 @@ import { useSelector } from "react-redux"
 // import bottomRightBg from "../../assests/bottom-right-bg.png"
 import topLeftBg from "../../assests/logo-bg-top-left.png"
 import bottomRightBg from "../../assests/logo-bottom-right-bg.png"
-
+import smallLogo from "../../assests/small-logo.png"
 export const Hero = () => {
     const language = useSelector(state => state.language.language)
     const [isLoaded, setIsLoaded] = useState(false)

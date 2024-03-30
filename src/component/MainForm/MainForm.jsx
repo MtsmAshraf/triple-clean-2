@@ -9,7 +9,7 @@ import bgLogo from "../../assests/small-logo.png"
 import bigCarSvg from "../../assests/big-car.svg"
 import smallCarSvg from "../../assests/small-car.svg"
 import motorcycleSvg from "../../assests/motorcycle.svg"
-import testImg from "../../assests/dior-sauvage.png"
+import testImg from "../../assests/new-imgs/one.png"
 const MainForm = () => {
     const language = useSelector(state => state.language.language);
     useEffect(() => {

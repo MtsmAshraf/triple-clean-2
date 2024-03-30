@@ -6,7 +6,7 @@
     padding: 20px;
     background-color: var(--main-form-bg);
     backdrop-filter: blur(10px);
-    border-radius: 10px;
+    border-radius: var(--main-border-radius);
     margin-bottom: 50px;
     position: relative;
     overflow: hidden;
@@ -68,7 +68,7 @@
     border: none;
     padding: 5px 10px;
     font-family: "Tajawal";
-    border-radius: 10px;
+    border-radius: var(--main-border-radius);
     color: var(--text-color);
     border: 1px solid transparent;
     flex: 1;
@@ -112,7 +112,7 @@
     cursor: pointer;
     width: 100%;
     text-align: center;
-    border-radius: 6px;
+    border-radius: var(--main-border-radius);
     color: var(--text-color);
     background-color: var(--option-bg);
     display: flex;
@@ -172,7 +172,7 @@
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: var(--main-border-radius);
     cursor: pointer;
     border: none;
     font-family: "Tajawal", sans-serif;
@@ -215,7 +215,7 @@
     width: 400px;
     height: 210px;
     transition: var(--main-transition);
-    border-radius: 40px 40px 0px 0px;
+    border-radius: var(--main-border-radius) var(--main-border-radius) 0px 0px;
     border: 1px solid transparent;
 }
 .main-form .perfumes-wrapper .perfume{
@@ -232,7 +232,7 @@
     overflow: hidden;
     cursor: pointer;
     background-color: var(--bg-color);
-    border-radius: 40px;
+    border-radius: 50px;
     transition: var(--main-transition);
     /* padding-top: 20px;
     padding-bottom: 20px; */
@@ -265,7 +265,7 @@
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 0px 0px 6px 6px;
+    border-radius: 0px 0px var(--main-border-radius) var(--main-border-radius);
     /* display: none; */
     position: absolute;
     left: 0;

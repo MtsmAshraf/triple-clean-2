@@ -59,7 +59,6 @@ const Header = () => {
         // root.style.setProperty("--main-gradient", "linear-gradient(to right top, #ffffff, #d4d2e8, #a7a7d1, #777fbc, #3d5aa6)");
         root.style.setProperty("--main-gradient", "linear-gradient(to right top, #fff, var(--main-color))");
       }
-
   })
 
 

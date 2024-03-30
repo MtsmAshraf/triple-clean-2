@@ -25,6 +25,7 @@
   --logo-opacity: 0.1;
   --main-gradient: linear-gradient(to right top, #ffffff, var(--main-color))
   --overlay-bg: rgb(0,0,0,0.2);
+  --main-border-radius: 12px;
 }
 *::selection{
   background-color: var(--main-color);
