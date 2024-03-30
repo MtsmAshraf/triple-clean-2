@@ -215,7 +215,7 @@
     width: 400px;
     height: 210px;
     transition: var(--main-transition);
-    border-radius: var(--main-border-radius) var(--main-border-radius) 0px 0px;
+    border-radius: 50px 50px 0px 0px;
     border: 1px solid transparent;
 }
 .main-form .perfumes-wrapper .perfume{
@@ -234,14 +234,25 @@
     background-color: var(--bg-color);
     border-radius: 50px;
     transition: var(--main-transition);
+    /* background-color: red; */
     /* padding-top: 20px;
     padding-bottom: 20px; */
+}
+.main-form .perfumes-wrapper .perfume label img{
+    filter: grayscale(100%);
+    transform: scale(1.2);
+    transition: var(--main-transition);
 }
 .main-form .perfumes-wrapper .perfume:has(input:checked),
 .main-form .perfumes-wrapper .perfume:hover{
     background-color: var(--icon-bg);
     border: 1px solid var(--main-color);
     transition: var(--main-transition);
+}
+.main-form .perfumes-wrapper .perfume:has(input:checked) img,
+.main-form .perfumes-wrapper .perfume:hover img{
+    filter: grayscale(0%);
+    transform: scale(1.3);
 }
 .main-form .perfumes-wrapper .perfume .img{
     height: fit-content;
