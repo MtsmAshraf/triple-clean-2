@@ -10,7 +10,10 @@ import bigCarSvg from "../../assests/big-car.svg"
 import smallCarSvg from "../../assests/small-car.svg"
 import motorcycleSvg from "../../assests/motorcycle.svg"
 import testImg from "../../assests/new-imgs/one.png"
+
 const MainForm = () => {
+
+    let imgsUrlList = []
     const language = useSelector(state => state.language.language);
     useEffect(() => {
         let form = document.querySelector("form")

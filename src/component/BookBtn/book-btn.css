@@ -4,7 +4,7 @@
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: var(--main-border-radius);
     display: block;
     width: fit-content;
     margin-right: auto;
