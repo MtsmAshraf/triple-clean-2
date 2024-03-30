@@ -2,25 +2,25 @@
     {
       "id": "1",
       "name": "Black Opium",
-      "imgUrl": "../../assets/black-opium.png",
+      "imgUrl": "../../assests/perfume-imgs/one.png",
       "price": 10.99
     },
     {
       "id": "2",
-      "name": "One Milion",
-      "imgUrl": "../../assets/black-opium.png",
+      "name": "Dior Sauvage",
+      "imgUrl": "../../assests/perfume-imgs/two.png",
       "price": 19.99
     },
     {
       "id": "3",
-      "name": "Dior Sauvage",
-      "imgUrl": "../../assets/dior-sauvage.png",
+      "name": "Match Lord",
+      "imgUrl": "../../assests/perfume-imgs/three.png",
       "price": 14.50
     },
     {
       "id": "4",
-      "name": "Match Lord",
-      "imgUrl": "../../assests/match-lord.png",
+      "name": "One Milion",
+      "imgUrl": "../../assests/perfume-imgs/four.png",
       "price": 24.99
     }
   ]

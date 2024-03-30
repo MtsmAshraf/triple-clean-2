@@ -9,11 +9,18 @@ import bgLogo from "../../assests/small-logo.png"
 import bigCarSvg from "../../assests/big-car.svg"
 import smallCarSvg from "../../assests/small-car.svg"
 import motorcycleSvg from "../../assests/motorcycle.svg"
-import testImg from "../../assests/new-imgs/one.png"
+import imgOne from "../../assests/perfume-imgs/one.png"
+import imgTwo from "../../assests/perfume-imgs/two.png"
+import imgThree from "../../assests/perfume-imgs/three.png"
+import imgFour from "../../assests/perfume-imgs/four.png"
 
 const MainForm = () => {
 
-    let imgsUrlList = []
+    let imgsUrlList = [imgOne,imgTwo,imgThree,imgFour]
+    // useEffect(() => {
+    //     console.log(Object.values(perfumeData)[0].imgUrl)
+    //     console.log(imgsUrlList)
+    // })
     const language = useSelector(state => state.language.language);
     useEffect(() => {
         let form = document.querySelector("form")
@@ -151,14 +158,14 @@ const MainForm = () => {
             }
             <div className="perfumes-wrapper">
                 {
-                perfumeData.map((perfume) => {
-                    let imgUrl = perfume.imgUrl
+                perfumeData.map((perfume, index) => {
                     return(
                         <div className="perfume" key={perfume.id}>
                             <input type="radio" required id={perfume.name} name="perfume_type" value={perfume.name} />
                             <label htmlFor={perfume.name}>
                                 <div className="img">
-                                    <img src={testImg} alt="" />
+                                    <img src={imgsUrlList[index]} alt="" />
+                                    {/* <img src={Object.values(perfumeData)[index].imgUrl} alt="" /> */}
                                 </div>
                                 <span>
                                     {perfume.name}
